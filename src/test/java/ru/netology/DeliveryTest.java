@@ -15,9 +15,7 @@ import static com.codeborne.selenide.Selenide.*;
 public class DeliveryTest {
 
     @BeforeEach
-    public void setUpTest() {
-        open("http://localhost:9999");
-    }
+    public void setUpTest() {open("http://localhost:9999");}
 
     @Test
     @DisplayName("Should successful plan and replan meeting")
