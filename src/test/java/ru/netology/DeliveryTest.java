@@ -60,7 +60,6 @@ public class DeliveryTest {
         $("[data-test-id='phone'] input").setValue(validUser.getPhone());
         $("[data-test-id='agreement']").click();
         $$("button").find(exactText("Запланировать")).click();
-
         $("[data-test-id='success-notification'").should(visible, ofSeconds(15))
                 .shouldHave(text("Встреча успешно запланирована на " + meetingDate));
     }
